@@ -223,16 +223,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 .header-area{position: absolute;top:0;left:0;width: 100%;z-index: 99;}
 
 /*.welcome-hero-txt*/
-.welcome-hero-txt{text-align: center;padding:290px 0 372px;}
+.welcome-hero-txt{text-align: center;padding:290px 0 360px;}
 .welcome-hero-txt h2 {
     font-size: 42px;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 }
 .welcome-hero-txt p {
-    font-size: 18px;
+    font-size: 30px;
     text-transform: initial;
     color: #fff;
     font-weight: 500;
@@ -246,7 +246,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     background: #4e4ffa;
     color: #fff;
     border-radius: 3px;
-    margin-top: 55px;
+    margin-top: 30px;
     -webkit-transition: .3s linear; 
     -moz-transition:.3s linear; 
     -ms-transition:.3s linear; 
@@ -410,7 +410,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
         7. Featured-cars
 --------------------------------------*/
 .featured-cars{
-    padding:112px 0 120px;
+    padding:160px 0 120px;
 }
 .featured-cars-content{padding-top:96px;}
 
@@ -548,7 +548,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 .footer-top {padding: 112px 0 72px;}
 
 /*.footer-logo*/
+.footer-logo{
+    white-space: nowrap;
+}
 .footer-logo a,.footer-logo a:hover,.footer-logo a:focus{
+    width: auto;
     display: inline-block;
     color: #fff;
     font-size: 24px;
