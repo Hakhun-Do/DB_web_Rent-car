@@ -116,25 +116,25 @@
 									</div>
 									<div class="single-model-search">
 										<h2>PASSWORD</h2>									
-										<input type="text" pw="user-password" placeholder="PASSWORD 입력하세요" required>											
+										<input type="password" id="user-password" placeholder="PASSWORD 입력하세요" required>											
 									</div>
 									<div class="single-model-search">
 										<h2>NAME</h2>									
-										<input type="text" id="user-id" placeholder="이름을 입력하세요" required>														
+										<input type="text" id="user-name" placeholder="이름을 입력하세요" required>														
 									</div>
 									<div class="single-model-search">
 										<h2>주민등록번호</h2>									
-										<input type="text" id="user-id" placeholder="주민등록번호 입력하세요" required>														
+										<input type="text" id="user-number" placeholder="주민등록번호 입력하세요" required>														
 									</div>								
 									<div class="col-md-11 col-sm-12">
 										<div class="single-model-search text-center">
-											<button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
+											<button class="welcome-btn model-search-btn" onclick="loginFunction()">
 												Create
 											</button>
-											<button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
+											<button class="welcome-btn model-search-btn" onclick="navigateTo('User_login')">
 												user-Login
 											</button>
-											<button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
+											<button class="welcome-btn model-search-btn" onclick="navigateTo('Admin_login')">
 												admin-Login
 											</button>
 										</div>
@@ -204,6 +204,50 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
         
+		<!-- Login 버튼 클릭 시 ID와 PASSWORD 값을 가져와서 처리하는 함수 -->
+		<script>			
+			function loginFunction() {
+				const userId = document.getElementById("user-id").value;
+				const userPassword = document.getElementById("user-password").value;
+				const userName = document.getElementById("user-name").value;
+				const userNumber = document.getElementById("user-number").value;
+				
+				if (!userId || !userPassword || !userName || !userNumber) {
+					alert("모두 입력해주세요");
+					return;
+				}
+		
+				//  POST 요청으로 서버로 회원가입 정보를 전송
+				fetch("your_login_api_endpoint", { // 회원가입 API의 엔드포인트 URL로 교체
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({ 
+						id: userId,
+						password: userPassword,
+						name: userName,
+						number: userNumber
+					 })
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.success) {
+						alert("회원가입 성공!");
+						// 회원가입 성공 시 이동할 페이지 설정
+						window.location.href = "User_login.html";
+					} else {
+						alert("회원가입 실패: " + data.message);
+					}
+				})
+				.catch(error => console.error("Error:", error));
+			}
+		
+			// XML 페이지로 이동
+			function navigateTo(page) {
+				window.location.href = `${page}.xml`;
+			}
+		</script>
     </body>
 	
 </html>

@@ -54,15 +54,7 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-		<style>
-		#rentalForm {
-            text-align: center;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-	    </style>
+		
 
     </head>
 	
@@ -95,11 +87,10 @@
 				            <!-- Collect the nav links, forms, and other content for toggling -->
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class=" scroll active"><a href="#home">홈</a></li>
-				                    <li class="scroll"><a href="#featured-cars">차량 종류</a></li>
-				                    <li class="scroll"><a href="#new-cars">차량 대여</a></li>
-									<li class="scroll"><a href="#new-cars">차량 관리</a></li>
-									<li class="scroll"><a href="#new-cars">로그아웃</a></li>
+				                    <li class="scroll"><a href="Admin_rent.html">Car rent</a></li>
+									<li class="scroll"><a href="Admin_management.html">Car management</a></li>
+									<li class="scroll"><a href="Admin_login.html">Log out</a></li>
+									<!-- log out 부분 다시 생각해 봐야함.-->
 				                </ul><!--/.nav -->
 				            </div><!-- /.navbar-collapse -->
 				        </div><!--/.container-->
@@ -122,166 +113,73 @@
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
 
-		<!--featured-cars start -->
 		<section id="featured-cars" class="featured-cars">
 			<div class="container">
 				<div class="section-header">
-					<p>Admin <span>pages</span> with user-id</p>
-					<h2>user-id</h2>
-				</div><!--/.section-header-->
-				<div class="featured-cars-content">
-					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc1.png" alt="cars">
-									</div>									
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">BMW 6-series gran coupe</a></h2>
-									<h3>$89,395</h3>									
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc2.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">chevrolet camaro <span>wmv20</span></a></h2>
-									<h3>$66,575</h3>									
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc3.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">lamborghini <span>v520</span></a></h2>
-									<h3>$125,250</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc4.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">audi <span> a3</span> sedan</a></h2>
-									<h3>$95,500</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc4.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">infiniti <span>z5</span></a></h2>
-									<h3>$36,850</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc5.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">porsche <span>718</span> cayman</a></h2>
-									<h3>$48,500</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc7.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#"><span>bmw 8-</span>series coupe</a></h2>
-									<h3>$56,000</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="single-featured-cars">
-								<div class="featured-img-box">
-									<div class="featured-cars-img">
-										<img src="assets/images/featured-cars/fc8.png" alt="cars">
-									</div>
-								</div>
-								<div class="featured-cars-txt">
-									<h2><a href="#">BMW <span> x</span>series-6</a></h2>
-									<h3>$75,800</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.container-->
-
-		</section><!--/.featured-cars-->
-		<!--featured-cars end -->
+					<p>List of<span>Registered</span> Users</p>
+					<h2>User Information</h2>
+				</div>	
+				<div id="users-list" class="featured-users-content">
+					<!-- 사용자 목록이 여기에 동적으로 추가됩니다. -->
+				</div>					
+			</div>
+		</section>
+		<script>
+			// AJAX를 통해 서버에서 차량 목록을 가져와 추가하는 함수
+			function loadUsers() {
+            fetch('/get_users')
+                .then(response => response.json())
+                .then(users => {
+                    const usersList = document.getElementById('users-list');
+                    usersList.innerHTML = ''; // 초기화
+                    users.forEach(user => {
+                        usersList.innerHTML += `
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-featured-users">
+                                    <div class="featured-user-txt">
+                                        <h2><a href="#">${user.name}</a></h2>
+                                        <p>ID: ${user.id}</p>
+                                        <p>Email: ${user.email}</p>
+                                    </div>
+                                </div>
+                            </div>`;
+                    });
+                })
+					.catch(error => console.error('Error loading cars:', error));
+			}
+		
+			// 페이지 로드 시 차량 목록을 불러옵니다.
+			document.addEventListener("DOMContentLoaded", loadCars);
+		</script>
 
 		<!--car-rent-start-->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-11">
-					<div class="model-search-content">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10 col-sm-12">								
-								<div class="single-model-search">
-									<h2>아이디</h2>									
-									<input type="text" id="user-id" name="user-id" placeholder="승인할 아이디 입력하세요" required>														
-								</div>														
-								<div class="col-md-11 col-sm-12">
-									<div class="single-model-search text-center">										
-										<button class="welcome-btn model-search-btn" onclick="rentCar()">
-											승인
-										</button>
-									</div>
+		<section>
+			<div class="container">
+				<div class="row" style="margin-top: 200px;">
+					<div class="col-md-11">
+						<div class="model-search-content">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-10 col-sm-12">								
+									<div class="single-model-search">
+										<h2>USER ID</h2>									
+										<input type="text" id="userId" placeholder="아이디를 입력하세요" required>														
+									</div>														
+									<div class="col-md-11 col-sm-12">
+										<div class="single-model-search text-center">										
+											<button class="welcome-btn model-search-btn" onclick="AssignFunction()">
+												승인
+											</button>
+										</div>
+									</div>									
 								</div>
-								<script>
-									function rentCar() {
-									const userid = document.getElementById('user-id').value;
-									if (userid) {
-										alert(userid + " 아이디를 승인했습니다.");
-										} else {
-										alert("아이디를 다시 입력해주세요.");
-										}
-									}
-								</script>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--car-rent-end-->
 		
-
-
 		<!--contact start-->
 		<footer id="contact"  class="contact">
 			<div class="container">
@@ -336,6 +234,41 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
         
+		<script>
+			function AssignFunction() {
+				const userId = document.getElementById("userId").value;
+				
+				if (!userId) {
+					alert("아이디를 다시 입력하세요.");
+					return;
+				}
+		
+				// 예시: 서버로 데이터를 보내는 POST 요청
+				fetch("your_login_api_endpoint", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({id: userId})
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.success) {
+						alert("차량 삭제 성공!");
+						// 차량 삭제 성공 시 이동할 페이지 설정
+						window.location.href = "Admin_rent.html";
+					} else {
+						alert("차량 삭제 실패: " + data.message);
+					}
+				})
+				.catch(error => console.error("Error:", error));
+			}
+		
+			// XML 페이지로 이동
+			function navigateTo(page) {
+				window.location.href = `${page}.xml`;
+			}
+		</script>
     </body>
 	
 </html>
